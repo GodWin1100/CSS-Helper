@@ -47,15 +47,18 @@ a:focus {
 .Logo {
 	padding: 1rem;
 	font-size: 1.5rem;
+	font-weight: bolder;
 	list-style-type: none;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
+	justify-content: center;
 }
 
 .Navbar {
 	background-color: var(--powder-blue);
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 0.5rem 1rem;
 	position: sticky;
 	top: 0;
@@ -75,6 +78,16 @@ a:focus {
 
 .Navbar_Links > li {
 	margin-left: 2rem;
+}
+
+.Download {
+	border: 1px solid navy;
+	background-color: #a7a7ff;
+	padding: 0.5rem;
+}
+
+.Download:hover {
+	background-color: #bafc79;
 }
 
 article {
@@ -117,8 +130,12 @@ li > img {
 html[lang=""]::before,
 html:not([lang])::before {
 	content: "You didn't declared a lang attribute for html";
+	text-align: center;
 	display: block;
+	font-weight: bolder;
+	font-size: 1.1rem;
 	color: #8a2be2;
+	border: 3px dotted var(--Alert);
 }
 
 /* Malicious Issues for Anchor. Security Issues */
@@ -129,8 +146,9 @@ a[target="_blank"]:not([rel="noopener noreferrer"]):not([rel="noreferrer noopene
 /* no div inside inline element */
 :is(a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var)
 	> div {
-	background-color: #dc143c8a;
+	background-color: #dc143c4f;
 	outline: 2px dashed #a00;
+	font-size: 1.3rem;
 }
 
 /* alt attribute for Image. It may remain empty for decorative image */
