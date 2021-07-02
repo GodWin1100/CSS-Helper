@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title -->
+		<title>CSS Helper</title>
+		<!-- meta -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#000000" />
+		<!-- keywords -->
+		<meta name="keywords" content="CSS Helper, Checker, Semantics" />
+		<!-- description -->
+		<meta
+			name="description"
+			content="A CSS File which can help to maintain basic Semantic of HTML."
+		/>
+		<!-- author -->
+		<meta name="author" content="Shivam Panchal" />
+		<!-- link -->
+		<link rel="stylesheet" type="text/css" href="cssHelper.css" />
+	</head>
+	<body>
+		<header class="Header">
+			<ul class="Logo">
+				<li>CSS Helper</li>
+				<li>Shivam Panchal</li>
+			</ul>
+		</header>
+		<nav class="Navbar">
+			<ul class="Navbar_Links">
+				<li><a href="#Lang">HTML-Lang</a></li>
+				<li><a href="#Anchor">Anchor</a></li>
+				<li><a href="#Div">Div</a></li>
+				<li><a href="#Img">Image</a></li>
+			</ul>
+			<a href="./Helper.css" download="Helper.css">Download Helper.css</a>
+			<div class="holder"></div>
+		</nav>
+		<main class="Main">
+			<article id="Lang">
+				<h1>
+					Lang attribute for HTML. Accessibility & Accessible Technologies
+				</h1>
+				<p>
+					<strong>NOTE: </strong>Check CSS File and change html tag to view the
+					warning text.
+				</p>
+				<ol>
+					<li>
+						<strong>Correct : </strong
+						><code>&lt;html lang="en"&gt;&lt;/html&gt;</code>
+					</li>
+					<li>
+						<strong>Incorrect : </strong
+						><code>&lt;html lang=""&gt;&lt;/html&gt;</code>
+					</li>
+					<li>
+						<strong>Incorrect : </strong><code>&lt;html&gt;&lt;/html&gt;</code>
+					</li>
+				</ol>
+			</article>
+			<article id="Anchor">
+				<h1>Malicious Issues for Anchors. Security</h1>
+				<ol>
+					<li>
+						<a
+							href="https://github.com/GodWin1100"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Github - noopener noreferrer</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/GodWin1100"
+							target="_blank"
+							rel="noreferrer noopener"
+							>Github - noreferrer noopener</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/GodWin1100"
+							target="_blank"
+							rel="noopener"
+							>Github - noopener</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://github.com/GodWin1100"
+							target="_blank"
+							rel="noreferrer"
+							>Github - noreferrer</a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/GodWin1100" target="_blank"
+							>Github - no rel</a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/GodWin1100">Github - no _blank</a>
+					</li>
+				</ol>
+			</article>
+			<article id="Div">
+				<h1>Div inside Inline Element. Semantic</h1>
+				<ol>
+					<li>
+						<a
+							><div>Inside of <code>a</code> Tag</div></a
+						>
+					</li>
+					<li>
+						<abbr
+							><div>Inside of <code>abbr</code> Tag</div></abbr
+						>
+					</li>
+					<li>
+						<button>
+							<div>Inside of <code>button</code> Tag</div>
+						</button>
+					</li>
+					<li>
+						<cite
+							><div>Inside of <code>cite</code> Tag</div></cite
+						>
+					</li>
+					<li>
+						<code
+							><div>Inside of <code>code</code> Tag</div></code
+						>
+					</li>
+					<li>
+						<dfn
+							><div>Inside of <code>dfn</code> Tag</div></dfn
+						>
+					</li>
+					<li>
+						<em
+							><div>Inside of <code>em</code> Tag</div></em
+						>
+					</li>
+					<li>
+						<kbd
+							><div>Inside of <code>kbd</code> Tag</div></kbd
+						>
+					</li>
+					<li>
+						<label
+							><div>Inside of <code>label</code> Tag</div></label
+						>
+					</li>
+					<li>
+						<map
+							><div>Inside of <code>map</code> Tag</div></map
+						>
+					</li>
+					<li>
+						<object>
+							<div>Inside of <code>object</code> Tag</div>
+						</object>
+					</li>
+					<li>
+						<output
+							><div>Inside of <code>output</code> Tag</div></output
+						>
+					</li>
+					<li>
+						<q
+							><div>Inside of <code>q</code> Tag</div></q
+						>
+					</li>
+					<li>
+						<samp
+							><div>Inside of <code>samp</code> Tag</div></samp
+						>
+					</li>
+					<li>
+						<small
+							><div>Inside of <code>small</code> Tag</div></small
+						>
+					</li>
+					<li>
+						<span
+							><div>Inside of <code>span</code> Tag</div></span
+						>
+					</li>
+					<li>
+						<strong
+							><div>Inside of <code>strong</code> Tag</div></strong
+						>
+					</li>
+					<li>
+						<sub
+							><div>Inside of <code>sub</code> Tag</div></sub
+						>
+					</li>
+					<li>
+						<sup
+							><div>Inside of <code>sup</code> Tag</div></sup
+						>
+					</li>
+					<li>
+						<time
+							><div>Inside of <code>time</code> Tag</div></time
+						>
+					</li>
+					<li>
+						<var
+							><div>Inside of <code>var</code> Tag</div></var
+						>
+					</li>
+				</ol>
+			</article>
+			<article id="Img">
+				<h1>Check alt attribute in Img tag</h1>
+				<ol>
+					<li><img src="./wolf.jpg" alt="Wolf" /></li>
+					<li><img src="./wolf.jpg" /></li>
+				</ol>
+			</article>
+		</main>
+		<footer class="Footer">
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://www.linkedin.com/in/shivam-panchal-godwin1100"
+			>
+				<img
+					alt="LinkedIn"
+					src="https://img.shields.io/badge/Shivam_Panchal-eeeeee?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2"
+				/>
+			</a>
+			<span class="Bar">|</span>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/GodWin1100"
+			>
+				<img
+					alt="GitHub"
+					src="https://img.shields.io/badge/Godwin1100-eeeeee?style=for-the-badge&logo=github&logoColor=white&labelColor=181717"
+				/>
+			</a>
+			<span class="Bar">|</span>
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="mailto:shivamjpanchal1@gmail.com?subject=CSS-Helper%20Hello"
+			>
+				<img
+					alt="G-Mail"
+					src="https://img.shields.io/badge/shivamjpanchal1-eeeeee?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335"
+				/>
+			</a>
+		</footer>
+	</body>
+</html>
