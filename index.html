@@ -22,14 +22,34 @@
 	</head>
 	<body>
 		<header class="Header">
-			<ul class="Logo">
-				<li>CSS Helper</li>
-				<!-- <li>Shivam Panchal</li> -->
+			<ul class="Logo_Container">
+				<li>
+					<img
+						class="Logo"
+						src="https://img.shields.io/badge/CSS_Helper-eeeeee?style=for-the-badge&logo=css3&logoColor=white&labelColor=1572B6"
+						alt="CSS3 Helpers"
+					/>
+				</li>
+				<!-- <li>
+					<a
+						href="https://github.com/GodWin1100"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							class="Logo"
+							alt="GodWin1100 | GitHub"
+							src="https://img.shields.io/badge/Godwin1100-eeeeee?style=for-the-badge&logo=github&logoColor=white&labelColor=181717"
+						/>
+					</a>
+				</li> -->
 			</ul>
 		</header>
 		<nav class="Navbar">
 			<ul class="Navbar_Links">
+				<li><a href="#Reset">Reset Default CSS</a></li>
 				<li><a href="#Lang">HTML-Lang</a></li>
+				<li><a href="#Height">HTML Height</a></li>
 				<li><a href="#Anchor">Anchor</a></li>
 				<li><a href="#Div">Div</a></li>
 				<li><a href="#Img">Image</a></li>
@@ -37,9 +57,47 @@
 			<a href="./Helper.css" download="Helper.css" class="Download"
 				>Download Helper.css</a
 			>
-			<div class="holder"></div>
 		</nav>
 		<main class="Main">
+			<article id="Reset">
+				<h1>Reset Default Browser CSS (Visual)</h1>
+				<strong>Note: </strong>
+				<ul>
+					<li>
+						Browser Default CSS should be reset programmatically so no
+						unexpected behavior would occur while viewing on different browser.
+					</li>
+					<li>
+						Basic main attributes like Margin, Padding, box-sizing and
+						font-family should be reset i.e. to assign default value to this
+						attribute.
+					</li>
+					<li>
+						Every element has Browser Default CSS if we want to just reset all
+						of them we can define default style for every element. It will be
+						tedious to do so we can just import an Reset Element Stylesheet from
+						CDN. <em>Although it's not necessary.</em>
+					</li>
+				</ul>
+			</article>
+			<article id="Height">
+				<h1>
+					Full height of <code>html</code> and <code>body</code> element
+					(Visual)
+				</h1>
+				<ul>
+					<li>
+						By default HTML & Body element tag does not have full window height.
+						If content of HTML is small than there will be problem for setting
+						footer to bottom of the page.
+					</li>
+					<li>
+						Although if content of HTML is big than windows size then footer
+						will be placed at bottom so this attribute is missed by most of the
+						developers.
+					</li>
+				</ul>
+			</article>
 			<article id="Lang">
 				<h1>
 					Lang attribute for HTML (Accessibility & Accessible Technologies)
