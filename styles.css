@@ -3,178 +3,178 @@ So it will override default styling across browsers. */
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 /* CSS Variable */
 :root {
-	--powder-blue: #bbe5edff;
-	--english-violet: #413c58ff;
-	--deep-champagne: #fed18cff;
-	--Alert: #f00;
+  --powder-blue: #bbe5edff;
+  --english-violet: #413c58ff;
+  --deep-champagne: #fed18cff;
+  --Alert: #f00;
 }
 
 html {
-	scroll-behavior: smooth; /* Smooth Scrolling */
-	font-size: 1.1rem;
-	background-color: #fffaf0;
+  scroll-behavior: smooth; /* Smooth Scrolling */
+  font-size: 1.1rem;
+  background-color: #fffaf0;
 }
 
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:active {
-	color: #adff2f;
+  color: #adff2f;
 }
 
 a:visited {
-	color: #4b0082;
+  color: #4b0082;
 }
 
 a:hover,
 a:focus {
-	color: rgb(140, 0, 255);
+  color: rgb(140, 0, 255);
 }
 
 .Header {
-	background-color: var(--deep-champagne);
+  background-color: var(--deep-champagne);
 }
 
 .Logo_Container {
-	padding: 1rem;
-	font-size: 1.5rem;
-	font-weight: bolder;
-	list-style-type: none;
-	display: flex;
-	/* justify-content: space-between; */
-	justify-content: center;
-	border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  list-style-type: none;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  border: 1px solid black;
 }
 
 .Logo {
-	height: 3rem;
-	width: auto;
-	transition: linear 100ms;
-	border: 1px solid black;
-	position: relative;
+  height: 3rem;
+  width: auto;
+  transition: linear 100ms;
+  border: 1px solid black;
+  position: relative;
 }
 
 a .Logo:hover,
 a .Logo:active,
 a .Logo:focus {
-	box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 5px black;
 }
 
 .Navbar {
-	background-color: var(--powder-blue);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem 1rem;
-	position: sticky;
-	top: 0;
-	left: 0;
-	box-shadow: 0px 5px 15px #ccc;
-	border: 1px solid black;
+  background-color: var(--powder-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 5px 15px #ccc;
+  border: 1px solid black;
 }
 
 .Navbar_Links {
-	list-style-type: none;
-	display: flex;
-	justify-content: flex-start;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .Navbar_Links > li {
-	margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .Download {
-	border: 1px solid navy;
-	background-color: #a7a7ff;
-	padding: 0.5rem;
+  border: 1px solid navy;
+  background-color: #a7a7ff;
+  padding: 0.5rem;
 }
 
 .Download:hover {
-	background-color: #bafc79;
+  background-color: #bafc79;
 }
 
 article {
-	padding: 1rem;
-	padding-top: 3.5rem;
-	margin-left: 2rem;
-	border-bottom: 1px solid #aaa;
+  padding: 1rem;
+  padding-top: 3.5rem;
+  margin-left: 2rem;
+  border-bottom: 1px solid #aaa;
 }
 
 article h1 {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 ol > li {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 ol > li::marker {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 li > img {
-	height: 100px;
-	width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .Footer {
-	background-color: var(--english-violet);
-	padding: 0.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  background-color: var(--english-violet);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Footer > a {
-	margin: 0px 2rem;
+  margin: 0px 2rem;
 }
 
 .Bar {
-	color: #fff;
+  color: #fff;
 }
 
 /* lang attribute is important for accessibility & accessible technologies */
 html[lang=""]::before,
 html:not([lang])::before {
-	content: "You didn't declared a lang attribute for html";
-	text-align: center;
-	display: block;
-	font-weight: bolder;
-	font-size: 1.1rem;
-	color: #8a2be2;
-	border: 3px dotted var(--Alert);
+  content: "You didn't declared a lang attribute for html";
+  text-align: center;
+  display: block;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  color: #8a2be2;
+  border: 3px dotted var(--Alert);
 }
 
 /* Malicious Issues for Anchor. Security Issues */
 a[target="_blank"]:not([rel="noopener noreferrer"]):not([rel="noreferrer noopener"]) {
-	outline: var(--Alert) 2px dotted;
+  outline: var(--Alert) 2px dotted;
 }
 
 /* no div inside inline element */
 :is(a, abbr, acronym, b, bdo, big, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, sup, textarea, time, tt, var)
-	> div {
-	background-color: #dc143c4f;
-	outline: 2px dashed #a00;
-	font-size: 1.3rem;
+  > div {
+  background-color: #dc143c4f;
+  outline: 2px dashed #a00;
+  font-size: 1.3rem;
 }
 
 /* alt attribute for Image. It may remain empty for decorative image */
 img[alt=""],
 img:not([alt]) {
-	border: 2px dashed #2b2ee2;
-	outline: 2px solid var(--Alert);
+  border: 2px dashed #2b2ee2;
+  outline: 2px solid var(--Alert);
 }
